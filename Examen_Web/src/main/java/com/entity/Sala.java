@@ -20,8 +20,8 @@ import java.io.Serializable;
 public class Sala implements Serializable {   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String sala;
+    private long id = 1;
+    private String sala = "holi";
 
     public long getId() {
         return id;

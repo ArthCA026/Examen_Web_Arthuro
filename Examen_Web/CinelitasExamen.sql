@@ -21,9 +21,9 @@ CREATE TABLE `peliculas` (
   CONSTRAINT `fk_peliculas_salas` FOREIGN KEY (`peliculas_id`) REFERENCES `peliculas` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ;  
 
-INSERT INTO `personas` VALUES (1,'Avengers Endgame','10 de marzo','₡5000',1); 
-INSERT INTO `personas` VALUES (2,'Cocaine Bear','23 de marzo','₡6000',3);
-INSERT INTO `personas` VALUES (3,'Matrix','15 de marzo','₡7500',5); 
+INSERT INTO `peliculas` VALUES (1,'Avengers Endgame','10 de marzo','₡5000',1); 
+INSERT INTO `peliculas` VALUES (2,'Cocaine Bear','23 de marzo','₡6000',3);
+INSERT INTO `peliculas` VALUES (3,'Matrix','15 de marzo','₡7500',5); 
 
  
  

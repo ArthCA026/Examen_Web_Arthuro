@@ -22,9 +22,41 @@ import java.io.Serializable;
 public class Pelicula implements Serializable {   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String nombre;
-    private String fecha;
-    private String costo;
+    private String nombre = "holi";
+    private String fecha = "holi";
+    private String costo = "holi";
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getCosto() {
+        return costo;
+    }
+
+    public void setCosto(String costo) {
+        this.costo = costo;
+    }
+
+    public Sala getSala() {
+        return sala;
+    }
+
+    public void setSala(Sala sala) {
+        this.sala = sala;
+    }
 
     
     @ManyToOne

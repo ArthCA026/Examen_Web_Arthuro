@@ -22,9 +22,9 @@ import java.io.Serializable;
 public class Pelicula implements Serializable {   
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String nombre = "holi";
-    private String fecha = "holi";
-    private String costo = "holi";
+    private String nombre;
+    private String fecha;
+    private String costo;
 
     public String getNombre() {
         return nombre;

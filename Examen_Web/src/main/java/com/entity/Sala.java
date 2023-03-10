@@ -21,7 +21,7 @@ public class Sala implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id = 1;
-    private String sala = "holi";
+    private String sala;
 
     public long getId() {
         return id;
